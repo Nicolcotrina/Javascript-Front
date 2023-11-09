@@ -1,0 +1,29 @@
+<div class="body">
+<div class="login">
+    <h3>Iniciar sesión</h3>
+    <div class="iniciar">
+        Nombre:<br>
+        <input type="text" class="primer_elemento" [(ngModel)]="nombre" required #name="ngModel"><br>
+
+        <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+            El nombre es obligatorio
+        </div>
+        Contraseña:<br>
+        <input type="password"  class="segundo_elemento"  [(ngModel)]="contra" required #password="ngModel"><br>
+
+        <div class="alert alert-danger mt-2" [hidden]="password.valid || password.pristine">
+            La contraseña es obligatoria
+        </div>
+        <button class="btn btn-primary" (click)="mostrarContra()">Iniciar Sesión</button><br>
+        <button class="btn btn-primary" (click)="registrar()">Registrar</button><br>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+</div>
+
+</div>
+{{name.errors | json}}
+<hr>
+
+{{ name.valid }}
+
+

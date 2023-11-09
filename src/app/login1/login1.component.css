@@ -1,0 +1,29 @@
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(213, 175, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    background-color: rgb(195, 139, 247);
+    width: 500px;
+    padding: 90px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.iniciar > input{
+    width: 180px;
+    height: 30px;
+    margin-top: 30PX;
+    border-radius: 20px;
+}
+
+.iniciar > button{
+    width: 200px;
+    background-color: purple;
+    border-color: purple;
+    margin-top: 20px;
+}
